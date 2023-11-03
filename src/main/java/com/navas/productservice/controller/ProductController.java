@@ -35,7 +35,6 @@ public class ProductController {
             @RequestParam(required = false) String name,
             @RequestParam(required = false) BigDecimal price) {
 
-        // TODO implement filter
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(productService.listAllProducts(name, price));
